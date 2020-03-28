@@ -1,0 +1,16 @@
+[Unit]
+Description=appname : An example service
+After=syslog.target
+
+[Service]
+User=springboot
+ExecStart=/bin/sh -c "address >> /var/log/springboot/appname.log"
+KillMode=control-group
+SuccessExitStatus=143
+OOMScoreAdjust=-999
+Restart=on-failure
+RestartSec=20s
+
+[Install]
+WantedBy=multi-user.target
+
