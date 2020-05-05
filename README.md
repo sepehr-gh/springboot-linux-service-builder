@@ -16,25 +16,26 @@ Edit contents of `example.service`.
 your spring application should already use `spring-boot-maven-plugin` to make it executable. Maven example:
 
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>2.1.1.RELEASE</version>
-				<configuration>
-					<executable>true</executable>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>repackage</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-		<finalName>jar-name</finalName>
-	</build>
-
+```
+<build>
+<plugins>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.1.1.RELEASE</version>
+        <configuration>
+            <executable>true</executable>
+        </configuration>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>repackage</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+</plugins>
+<finalName>jar-name</finalName>
+</build>
+```
 
