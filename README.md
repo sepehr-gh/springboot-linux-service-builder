@@ -5,6 +5,15 @@ You need a `springboot` user and group before you run this code. The generated s
 
 ## Usage:
 
+Clone this repository and move to the directory:
+
+```
+git clone https://github.com/sepehr-gh/springboot-linux-service-builder
+cd springboot-linux-service-builder
+```
+
+Call `build.sh` and pass path to jar file and the service name you want to set. Remember, you wont need to keep $ sign,
+
 ```
 ./build.sh $pathToJar $serviceName
 ```
