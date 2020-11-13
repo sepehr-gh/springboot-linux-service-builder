@@ -1,6 +1,8 @@
 # springboot-linux-service-builder
 Simple script that creates linux service for spring boot project. Script needs `systemd` support as these commands are used: `systemctl`, `service`.
 
+You need a `springboot` user and group before you run this code. The generated service will be accessible by that group only, to prevent security flaws.
+
 ## Usage:
 
 ```
